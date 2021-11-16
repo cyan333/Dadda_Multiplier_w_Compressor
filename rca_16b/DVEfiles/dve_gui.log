@@ -1,0 +1,18 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version M-2017.03-SP2_Full64; Runtime version M-2017.03-SP2_Full64;  Nov 15 20:52 2021
+VCD+ Writer M-2017.03-SP2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+The file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/rca_16b/inter.vpd' was opened successfully.
+110000 ps
+                   0 << Starting the Simulation >>
+time=                    0A=0000000000000000, B=&b, Cin=0000000000000000 : Sum= 0, Cout= out0
+time=                  100A=0000000000011111, B=&b, Cin=0000000000001100 : Sum= 0, Cout=+out0
+220000 ps
+time=                  120A=1100011000011111, B=&b, Cin=0000000110001100 : Sum= 1, Cout=¬out0
+time=                  130A=1111111111111111, B=&b, Cin=0000000000000000 : Sum= 1, Cout= out1
+330000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 330000 ps
+CPU Time:      0.160 seconds;       Data structure size:   0.0Mb
+Mon Nov 15 20:53:18 2021
+Updating preference file: /home/polaris/sxie/.synopsys_dve_prefs.tcl

@@ -1,0 +1,157 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "nMops": 0,
+            "end_perf": [
+                0.35998702049255371,
+                0.049854000000000002,
+                0.069404999999999994,
+                259896,
+                269832
+            ],
+            "start_perf": [
+                0.33410811424255371,
+                0.04795,
+                0.064586000000000005,
+                256496,
+                269832,
+                1637031129.281121
+            ],
+            "nQuads": 0
+        },
+        "full_adder": {
+            "nMops": 307,
+            "end_perf": [
+                0.38713216781616211,
+                0.054434000000000003,
+                0.073238999999999999,
+                267432,
+                276652
+            ],
+            "Compiled": "Yes",
+            "start_perf": [
+                0.37100601196289062,
+                0.050118999999999997,
+                0.071739999999999998,
+                261960,
+                269832,
+                1637031129.3180189
+            ],
+            "Compiled Times": 1,
+            "nQuads": 110
+        },
+        "timeunit": {
+            "nMops": 11,
+            "end_perf": [
+                0.37096118927001953,
+                0.050101,
+                0.071712999999999999,
+                261960,
+                269832
+            ],
+            "Compiled": "Yes",
+            "start_perf": [
+                0.36009812355041504,
+                0.0499,
+                0.069469000000000003,
+                259896,
+                269832,
+                1637031129.307111
+            ],
+            "Compiled Times": 3,
+            "nQuads": 15
+        },
+        "rca_16b_test": {
+            "nMops": 324,
+            "end_perf": [
+                0.39291620254516602,
+                0.059219000000000001,
+                0.073263999999999996,
+                264360,
+                276652
+            ],
+            "Compiled": "Yes",
+            "start_perf": [
+                0.3871760368347168,
+                0.054453000000000001,
+                0.073263999999999996,
+                267432,
+                276652,
+                1637031129.3341889
+            ],
+            "Compiled Times": 1,
+            "nQuads": 123
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_nivcsw": 2,
+            "ru_utime_sec": 0.062177999999999997,
+            "ru_stime_sec": 0.075994999999999993,
+            "ru_maxrss_kb": 71356,
+            "ru_minflt": 24548,
+            "ru_majflt": 0,
+            "ru_nvcsw": 601
+        },
+        "ru_childs_end": {
+            "ru_nivcsw": 18,
+            "ru_utime_sec": 0.0048700000000000002,
+            "ru_stime_sec": 0.019748999999999999,
+            "ru_maxrss_kb": 20616,
+            "ru_minflt": 4980,
+            "ru_majflt": 0,
+            "ru_nvcsw": 37
+        },
+        "peak_mem_kb": 276652
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7686,
+            "checksum": 0
+        },
+        "BEdzp_d": {
+            "mod": "full_adder",
+            "archive": "archive.2/_11962_archive_1.a",
+            "mode": 4,
+            "out": "BEdzp_d.o",
+            "bytes": 11010,
+            "checksum": 0
+        },
+        "UN6wk_d": {
+            "mod": "rca_16b_test",
+            "archive": "archive.2/_11962_archive_1.a",
+            "mode": 4,
+            "out": "UN6wk_d.o",
+            "bytes": 18419,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {
+        "H0Y6L_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_11962_archive_1.a",
+            "objects": [
+                [
+                    "BEdzp_d.o",
+                    11010
+                ],
+                [
+                    "UN6wk_d.o",
+                    18419
+                ],
+                [
+                    "amcQwB.o",
+                    100881
+                ]
+            ],
+            "size": 130310
+        }
+    ]
+}

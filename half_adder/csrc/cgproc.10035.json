@@ -1,0 +1,124 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.32362985610961914,
+                0.052553000000000002,
+                0.049399999999999999,
+                255860,
+                269756,
+                1637030415.3163869
+            ],
+            "end_perf": [
+                0.35531187057495117,
+                0.056547,
+                0.052358000000000002,
+                265468,
+                269756
+            ],
+            "nQuads": 0,
+            "nMops": 0
+        },
+        "timeunit": {
+            "start_perf": [
+                0.35540890693664551,
+                0.056598000000000002,
+                0.052405,
+                265468,
+                269756,
+                1637030415.348166
+            ],
+            "end_perf": [
+                0.3704218864440918,
+                0.057702000000000003,
+                0.054553999999999998,
+                265484,
+                269756
+            ],
+            "Compiled Times": 2,
+            "Compiled": "Yes",
+            "nQuads": 15,
+            "nMops": 11
+        },
+        "half_adder_test": {
+            "start_perf": [
+                0.37046384811401367,
+                0.057722999999999997,
+                0.054574999999999999,
+                265484,
+                269756,
+                1637030415.3632209
+            ],
+            "end_perf": [
+                0.38512992858886719,
+                0.060407000000000002,
+                0.057227,
+                275156,
+                275156
+            ],
+            "Compiled Times": 1,
+            "Compiled": "Yes",
+            "nQuads": 107,
+            "nMops": 247
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7686,
+            "mode": 4,
+            "checksum": 0
+        },
+        "xQL2a_d": {
+            "mod": "half_adder_test",
+            "out": "xQL2a_d.o",
+            "archive": "archive.1/_10035_archive_1.a",
+            "bytes": 10706,
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {
+        "H0Y6L_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_10035_archive_1.a",
+            "objects": [
+                [
+                    "xQL2a_d.o",
+                    10706
+                ],
+                [
+                    "amcQwB.o",
+                    99244
+                ]
+            ],
+            "size": 109950
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.063126000000000002,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 71752,
+            "ru_stime_sec": 0.062073999999999997,
+            "ru_minflt": 24486,
+            "ru_nvcsw": 573,
+            "ru_nivcsw": 2
+        },
+        "peak_mem_kb": 275184,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0078530000000000006,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 19900,
+            "ru_stime_sec": 0.016926,
+            "ru_minflt": 4979,
+            "ru_nvcsw": 36,
+            "ru_nivcsw": 18
+        }
+    }
+}
