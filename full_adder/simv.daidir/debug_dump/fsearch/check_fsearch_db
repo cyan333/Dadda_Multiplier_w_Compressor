@@ -1,6 +1,6 @@
 #!/bin/sh -h 
 
-FILE_PATH="/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch"
+FILE_PATH="/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch"
 lockfile="${FILE_PATH}"/lock
 
 FSearch_lock_release() {
@@ -28,17 +28,17 @@ if [ "${dir_name}" = "." ]; then
     cd $dir_name
     dir_name=`/bin/pwd`
 fi
-if [ -d "$dir_name"/../../../../../../../../.. ]; then
-    cd "$dir_name"/../../../../../../../../..
+if [ -d "$dir_name"/../../../../../../../../../../.. ]; then
+    cd "$dir_name"/../../../../../../../../../../..
 fi
 
-if [ -f "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
-    if [ ! -f "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
+if [ -f "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
+    if [ ! -f "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
         if [ "$#" -eq 1 ] && [ "x$1" == "x-background" ]; then
             trap FSearch_lock_release EXIT
             (
                 flock 193
-                create_fsearch_db_ctrl "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+                create_fsearch_db_ctrl "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
                 exit 193
             ) 193> "$lockfile"
             rstat=$?
@@ -46,12 +46,12 @@ if [ -f "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_du
                 exit $rstat
             fi
         else
-            "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
-            if [ -f "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
-               rm -f "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/fsearch.stat"
+            "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+            if [ -f "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+               rm -f "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/fsearch.stat"
             fi
         fi
-    elif [ -f "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
-       rm -f "/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir/debug_dump/fsearch/fsearch.stat"
+    elif [ -f "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+       rm -f "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir/debug_dump/fsearch/fsearch.stat"
     fi
 fi

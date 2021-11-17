@@ -1,0 +1,128 @@
+{
+    "NameTable": {
+        "timeunit": [
+            "timeunit",
+            "H0Y6L",
+            "module",
+            1
+        ],
+        "full_adder_test": [
+            "full_adder_test",
+            "WRTUj",
+            "module",
+            2
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            3
+        ]
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "MlibObjs": {},
+    "CompileStatus": "Successful",
+    "CompileStrategy": "fullobj",
+    "PrevCompiledModules": {
+        "...MASTER...": {
+            "amcQw_d": {
+                "out": "objs/amcQw_d.o",
+                "bytes": 7686,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "full_adder_test": {
+            "WRTUj_d": {
+                "out": "WRTUj_d.o",
+                "bytes": 13124,
+                "mod": "full_adder_test",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.2/_prev_archive_1.a"
+            }
+        },
+        "timeunit": {
+            "H0Y6L_d": {
+                "out": "H0Y6L_d.o",
+                "bytes": 8072,
+                "mod": "timeunit",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.2/_prev_archive_1.a"
+            }
+        }
+    },
+    "stat": {
+        "nQuads": 179,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.029926999999999999,
+            "ru_stime_sec": 0.018703999999999998,
+            "ru_maxrss_kb": 100816,
+            "ru_minflt": 6457,
+            "ru_majflt": 0,
+            "ru_nvcsw": 284,
+            "ru_nivcsw": 3
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0051370000000000001,
+            "ru_stime_sec": 0.014699,
+            "ru_maxrss_kb": 22164,
+            "ru_minflt": 1679,
+            "ru_majflt": 0,
+            "ru_nvcsw": 22,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_utime_sec": 0.03338,
+            "ru_stime_sec": 0.022252999999999998,
+            "ru_maxrss_kb": 105732,
+            "ru_minflt": 7770,
+            "ru_majflt": 0,
+            "ru_nvcsw": 390,
+            "ru_nivcsw": 3
+        },
+        "nMops": 468,
+        "totalObjSize": 99268,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0051370000000000001,
+            "ru_stime_sec": 0.019023000000000002,
+            "ru_maxrss_kb": 22868,
+            "ru_minflt": 1914,
+            "ru_majflt": 0,
+            "ru_nvcsw": 26,
+            "ru_nivcsw": 1
+        },
+        "outputSizePerQuad": 554.56983240223462,
+        "Frontend(%)": 89.65548232474535,
+        "CodeGen(%)": 10.344517675254647,
+        "peak_mem_kb": 256084
+    },
+    "Misc": {
+        "archive_dir": "archive.2",
+        "csrc_abs": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/csrc",
+        "cwd": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder",
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir"
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "bytes": 99268,
+        "out": "amcQwB.o",
+        "archive": "archive.2/_7736_archive_1.a"
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "timeunit",
+        "full_adder_test"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.7736.json"
+    ]
+}

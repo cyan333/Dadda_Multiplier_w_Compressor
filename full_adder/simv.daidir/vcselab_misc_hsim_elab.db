@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/simv.daidir
+pDaiDir                            	/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/full_adder/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0
