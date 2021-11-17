@@ -1,0 +1,32 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "dadda_8x8_uncompressed_tb": [
+        "dadda_8x8_uncompressed_tb",
+        "atSgW",
+        "module",
+        6
+    ],
+    "full_adder": [
+        "full_adder",
+        "BEdzp",
+        "module",
+        1
+    ],
+    "full_adder2": [
+        "full_adder2",
+        "pmI1A",
+        "module",
+        5
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

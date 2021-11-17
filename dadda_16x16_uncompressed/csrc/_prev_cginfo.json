@@ -1,0 +1,166 @@
+{
+    "MlibObjs": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 101057,
+        "archive": "archive.9/_13783_archive_1.a"
+    },
+    "CompileStrategy": "fullobj",
+    "CompileProcesses": [
+        "cgproc.13783.json"
+    ],
+    "PrevCompiledModules": {
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7758,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "bytes": 41434,
+                "mod": "std",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.9/_prev_archive_1.a",
+                "out": "reYIK_d.o"
+            }
+        },
+        "full_adder2": {
+            "pmI1A_d": {
+                "bytes": 11158,
+                "mod": "full_adder2",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.9/_prev_archive_1.a",
+                "out": "pmI1A_d.o"
+            }
+        },
+        "full_adder": {
+            "BEdzp_d": {
+                "bytes": 9550,
+                "mod": "full_adder",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.9/_prev_archive_1.a",
+                "out": "BEdzp_d.o"
+            }
+        },
+        "dadda_8x8_uncompressed_tb": {
+            "atSgW_d": {
+                "bytes": 107649,
+                "mod": "dadda_8x8_uncompressed_tb",
+                "out": "atSgW_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.9/_13783_archive_1.a"
+            }
+        }
+    },
+    "Misc": {
+        "csrc_abs": "/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/csrc",
+        "cwd": "/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed",
+        "archive_dir": "archive.9",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "NameTable": {
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            3
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            2
+        ],
+        "dadda_8x8_uncompressed_tb": [
+            "dadda_8x8_uncompressed_tb",
+            "atSgW",
+            "module",
+            6
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module",
+            1
+        ],
+        "full_adder2": [
+            "full_adder2",
+            "pmI1A",
+            "module",
+            5
+        ]
+    },
+    "PEModules": [],
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.094099000000000002,
+            "ru_stime_sec": 0.064382999999999996,
+            "ru_nivcsw": 4,
+            "ru_maxrss_kb": 68660,
+            "ru_minflt": 23517,
+            "ru_nvcsw": 625
+        },
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0069420000000000003,
+            "ru_stime_sec": 0.019406,
+            "ru_nivcsw": 18,
+            "ru_maxrss_kb": 22496,
+            "ru_minflt": 4999,
+            "ru_nvcsw": 44
+        },
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0069420000000000003,
+            "ru_stime_sec": 0.015455999999999999,
+            "ru_nivcsw": 16,
+            "ru_maxrss_kb": 20476,
+            "ru_minflt": 4388,
+            "ru_nvcsw": 33
+        },
+        "mop/quad": 3.0593112244897958,
+        "nMops": 9594,
+        "nQuads": 3136,
+        "totalObjSize": 209434,
+        "mopSpeed": 196397.13408393043,
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.14294899999999999,
+            "ru_stime_sec": 0.078423000000000007,
+            "ru_nivcsw": 4,
+            "ru_maxrss_kb": 75824,
+            "ru_minflt": 26633,
+            "ru_nvcsw": 814
+        },
+        "quadSpeed": 64196.519959058351,
+        "outputSizePerQuad": 66.783801020408163,
+        "CodeGen(%)": 34.173026743803732,
+        "Frontend(%)": 65.826973256196268,
+        "peak_mem_kb": 279044
+    },
+    "CurCompileUdps": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "dadda_8x8_uncompressed_tb",
+        "dadda_8x8_uncompressed_tb",
+        "full_adder",
+        "full_adder2"
+    ],
+    "CompileStatus": "Successful",
+    "LVLData": [
+        "SIM"
+    ]
+}
