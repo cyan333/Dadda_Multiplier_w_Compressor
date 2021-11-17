@@ -1,0 +1,252 @@
+{
+    "PrevCompiledModules": {
+        "dadda_8x8_compressed_tb": {
+            "Gidut_d": {
+                "bytes": 27121,
+                "mod": "dadda_8x8_compressed_tb",
+                "out": "Gidut_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_27372_archive_1.a"
+            }
+        },
+        "rca_14b": {
+            "aKNmW_d": {
+                "bytes": 72615,
+                "mod": "rca_14b",
+                "out": "aKNmW_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a"
+            }
+        },
+        "rca_16b": {
+            "UY6pt_d": {
+                "bytes": 6894,
+                "mod": "rca_16b",
+                "out": "UY6pt_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a"
+            }
+        },
+        "compressor_4_2": {
+            "ntfQz_d": {
+                "bytes": 16477,
+                "mod": "compressor_4_2",
+                "out": "ntfQz_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a"
+            }
+        },
+        "full_adder": {
+            "BEdzp_d": {
+                "bytes": 11415,
+                "mod": "full_adder",
+                "out": "BEdzp_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a"
+            }
+        },
+        "ripple_carry_4_bit": {
+            "S1Wtd_d": {
+                "bytes": 6969,
+                "mod": "ripple_carry_4_bit",
+                "out": "S1Wtd_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a"
+            }
+        },
+        "compressor_4_2_ld": {
+            "NRztg_d": {
+                "bytes": 18718,
+                "mod": "compressor_4_2_ld",
+                "out": "NRztg_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "bytes": 41434,
+                "mod": "std",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a",
+                "out": "reYIK_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 8058,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "product_8x8": {
+            "S2T0m_d": {
+                "bytes": 59114,
+                "mod": "product_8x8",
+                "out": "S2T0m_d.o",
+                "mode": 4,
+                "checksum": 0,
+                "archive": "archive.20/_prev_archive_1.a"
+            }
+        }
+    },
+    "MlibObjs": {},
+    "CompileProcesses": [
+        "cgproc.27372.json"
+    ],
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "Frontend(%)": 71.170576162373678,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.100216,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 68824,
+            "ru_stime_sec": 0.059933,
+            "ru_minflt": 23410,
+            "ru_nvcsw": 498,
+            "ru_nivcsw": 3
+        },
+        "mopSpeed": 326394.87621628284,
+        "CodeGen(%)": 28.829423837626315,
+        "quadSpeed": 116984.85035102848,
+        "nQuads": 4749,
+        "totalObjSize": 148343,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0068219999999999999,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 20540,
+            "ru_stime_sec": 0.014884,
+            "ru_minflt": 4376,
+            "ru_nvcsw": 33,
+            "ru_nivcsw": 16
+        },
+        "nMops": 13250,
+        "ru_self_end": {
+            "ru_utime_sec": 0.14081099999999999,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 76908,
+            "ru_stime_sec": 0.076355000000000006,
+            "ru_minflt": 26621,
+            "ru_nvcsw": 663,
+            "ru_nivcsw": 3
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0077999999999999996,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 22764,
+            "ru_stime_sec": 0.017818000000000001,
+            "ru_minflt": 4983,
+            "ru_nvcsw": 44,
+            "ru_nivcsw": 18
+        },
+        "mop/quad": 2.7900610654874711,
+        "outputSizePerQuad": 31.236681406611918,
+        "peak_mem_kb": 279000
+    },
+    "Misc": {
+        "cwd": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor",
+        "archive_dir": "archive.20",
+        "csrc": "csrc",
+        "csrc_abs": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            1
+        ],
+        "rca_16b": [
+            "rca_16b",
+            "UY6pt",
+            "module",
+            2
+        ],
+        "compressor_4_2": [
+            "compressor_4_2",
+            "ntfQz",
+            "module",
+            5
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module",
+            4
+        ],
+        "rca_14b": [
+            "rca_14b",
+            "aKNmW",
+            "module",
+            7
+        ],
+        "ripple_carry_4_bit": [
+            "ripple_carry_4_bit",
+            "S1Wtd",
+            "module",
+            3
+        ],
+        "product_8x8": [
+            "product_8x8",
+            "S2T0m",
+            "module",
+            10
+        ],
+        "compressor_4_2_ld": [
+            "compressor_4_2_ld",
+            "NRztg",
+            "module",
+            6
+        ],
+        "dadda_8x8_compressed_tb": [
+            "dadda_8x8_compressed_tb",
+            "Gidut",
+            "module",
+            9
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            8
+        ]
+    },
+    "PEModules": [],
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "rca_16b",
+        "rca_14b",
+        "ripple_carry_4_bit",
+        "full_adder",
+        "product_8x8",
+        "compressor_4_2",
+        "compressor_4_2_ld",
+        "dadda_8x8_compressed_tb",
+        "dadda_8x8_compressed_tb"
+    ],
+    "CurCompileUdps": {},
+    "CompileStatus": "Successful",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 101575,
+        "archive": "archive.20/_27372_archive_1.a"
+    },
+    "LVLData": [
+        "SIM"
+    ]
+}
