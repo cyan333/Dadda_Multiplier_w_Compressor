@@ -1,0 +1,28 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnphbKtPn
+synUtils::sendTool -active {_icl_start_rpc -version "M-2017.03-SP2_Full64" -sync_file /tmp/vcs_dve_rpc.sxie.17640}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.sxie.17640}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {dadda_8x8_uncompressed_tb.dut.a dadda_8x8_uncompressed_tb.dut.b dadda_8x8_uncompressed_tb.dut.c dadda_8x8_uncompressed_tb.dut.cout dadda_8x8_uncompressed_tb.dut.final_result dadda_8x8_uncompressed_tb.dut.p dadda_8x8_uncompressed_tb.dut.rca_a dadda_8x8_uncompressed_tb.dut.rca_b dadda_8x8_uncompressed_tb.dut.s dadda_8x8_uncompressed_tb.dut.sum } -aggregates  -fid VPD0
+synopsys::run -relative 10000000.000000fs
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope dadda_8x8_uncompressed_tb.dut -radix {binary } -list {{final_result[15:0]} }

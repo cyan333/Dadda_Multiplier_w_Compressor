@@ -1,12 +1,11 @@
 Chronologic VCS simulator copyright 1991-2017
 Contains Synopsys proprietary information.
-Compiler version M-2017.03-SP2_Full64; Runtime version M-2017.03-SP2_Full64;  Nov 11 13:35 2021
+Compiler version M-2017.03-SP2_Full64; Runtime version M-2017.03-SP2_Full64;  Nov 16 21:20 2021
 VCD+ Writer M-2017.03-SP2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
-The file '/home/polaris/sxie/tsmc65/verilog/HighSpeedProject/inter.vpd' was opened successfully.
-Opening UVM/VMM Reference...
+The file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/half_adder/inter.vpd' was opened successfully.
 1000000 ps
+2000000 ps
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 1000000 ps
-CPU Time:      0.130 seconds;       Data structure size:   0.0Mb
-Mon Nov 15 20:00:53 2021
-Updating preference file: /home/polaris/sxie/.synopsys_dve_prefs.tcl
+Time: 2000000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.0Mb
+Tue Nov 16 21:24:28 2021
