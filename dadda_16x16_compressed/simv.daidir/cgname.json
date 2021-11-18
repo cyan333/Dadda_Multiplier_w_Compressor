@@ -1,0 +1,56 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "rca_30b": [
+        "rca_30b",
+        "Q9MBy",
+        "module",
+        8
+    ],
+    "compressor_4_2_ld": [
+        "compressor_4_2_ld",
+        "NRztg",
+        "module",
+        5
+    ],
+    "ripple_carry_4_bit": [
+        "ripple_carry_4_bit",
+        "S1Wtd",
+        "module",
+        2
+    ],
+    "dadda_16x16_compressed_tb": [
+        "dadda_16x16_compressed_tb",
+        "ZwUeb",
+        "module",
+        6
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        7
+    ],
+    "full_adder": [
+        "full_adder",
+        "BEdzp",
+        "module",
+        3
+    ],
+    "product_16x16": [
+        "product_16x16",
+        "CxgE5",
+        "module",
+        9
+    ],
+    "compressor_4_2": [
+        "compressor_4_2",
+        "ntfQz",
+        "module",
+        4
+    ]
+}

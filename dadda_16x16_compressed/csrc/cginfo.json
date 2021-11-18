@@ -1,0 +1,221 @@
+{
+    "CompileStatus": "Successful",
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "dadda_16x16_compressed_tb": {
+            "ZwUeb_d": {
+                "mod": "dadda_16x16_compressed_tb",
+                "bytes": 321936,
+                "mode": 4,
+                "checksum": 0,
+                "out": "ZwUeb_d.o",
+                "archive": "archive.3/_45627_archive_1.a"
+            }
+        },
+        "ripple_carry_4_bit": {
+            "S1Wtd_d": {
+                "mod": "ripple_carry_4_bit",
+                "bytes": 6961,
+                "mode": 4,
+                "checksum": 0,
+                "out": "S1Wtd_d.o",
+                "archive": "archive.3/_45627_archive_1.a"
+            }
+        },
+        "compressor_4_2_ld": {
+            "NRztg_d": {
+                "mod": "compressor_4_2_ld",
+                "bytes": 18795,
+                "mode": 4,
+                "checksum": 0,
+                "out": "NRztg_d.o",
+                "archive": "archive.3/_45627_archive_1.a"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "mod": "std",
+                "bytes": 41434,
+                "mode": 4,
+                "checksum": 0,
+                "out": "reYIK_d.o",
+                "archive": "archive.3/_prev_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mod": "...MASTER...",
+                "bytes": 8904,
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        },
+        "full_adder": {
+            "BEdzp_d": {
+                "mod": "full_adder",
+                "bytes": 11263,
+                "mode": 4,
+                "checksum": 0,
+                "out": "BEdzp_d.o",
+                "archive": "archive.3/_45627_archive_1.a"
+            }
+        },
+        "compressor_4_2": {
+            "ntfQz_d": {
+                "mod": "compressor_4_2",
+                "bytes": 16469,
+                "mode": 4,
+                "checksum": 0,
+                "out": "ntfQz_d.o",
+                "archive": "archive.3/_45627_archive_1.a"
+            }
+        }
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.17658599999999999,
+            "ru_maxrss_kb": 69984,
+            "ru_stime_sec": 0.069858000000000003,
+            "ru_minflt": 23728,
+            "ru_majflt": 0,
+            "ru_nvcsw": 519,
+            "ru_nivcsw": 4
+        },
+        "quadSpeed": 83214.500744684206,
+        "nMops": 28818,
+        "peak_mem_kb": 280672,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0059059999999999998,
+            "ru_maxrss_kb": 20984,
+            "ru_stime_sec": 0.016069,
+            "ru_minflt": 4370,
+            "ru_majflt": 0,
+            "ru_nvcsw": 33,
+            "ru_nivcsw": 16
+        },
+        "Frontend(%)": 58.31500525074798,
+        "mopSpeed": 228301.16931267225,
+        "nQuads": 10504,
+        "totalObjSize": 540364,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0079159999999999994,
+            "ru_maxrss_kb": 23936,
+            "ru_stime_sec": 0.018079000000000001,
+            "ru_minflt": 4977,
+            "ru_majflt": 0,
+            "ru_nvcsw": 44,
+            "ru_nivcsw": 18
+        },
+        "ru_self_end": {
+            "ru_utime_sec": 0.30281400000000003,
+            "ru_maxrss_kb": 79040,
+            "ru_stime_sec": 0.096393999999999994,
+            "ru_minflt": 28121,
+            "ru_majflt": 0,
+            "ru_nvcsw": 745,
+            "ru_nivcsw": 9
+        },
+        "mop/quad": 2.7435262757044936,
+        "outputSizePerQuad": 51.443640517897947,
+        "CodeGen(%)": 41.68499474925202
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            1
+        ],
+        "rca_30b": [
+            "rca_30b",
+            "Q9MBy",
+            "module",
+            8
+        ],
+        "compressor_4_2_ld": [
+            "compressor_4_2_ld",
+            "NRztg",
+            "module",
+            5
+        ],
+        "ripple_carry_4_bit": [
+            "ripple_carry_4_bit",
+            "S1Wtd",
+            "module",
+            2
+        ],
+        "dadda_16x16_compressed_tb": [
+            "dadda_16x16_compressed_tb",
+            "ZwUeb",
+            "module",
+            6
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            7
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module",
+            3
+        ],
+        "product_16x16": [
+            "product_16x16",
+            "CxgE5",
+            "module",
+            9
+        ],
+        "compressor_4_2": [
+            "compressor_4_2",
+            "ntfQz",
+            "module",
+            4
+        ]
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "rca_30b",
+        "rca_30b",
+        "ripple_carry_4_bit",
+        "ripple_carry_4_bit",
+        "full_adder",
+        "full_adder",
+        "product_16x16",
+        "product_16x16",
+        "compressor_4_2",
+        "compressor_4_2",
+        "compressor_4_2_ld",
+        "compressor_4_2_ld",
+        "dadda_16x16_compressed_tb",
+        "dadda_16x16_compressed_tb"
+    ],
+    "CompileStrategy": "fullobj",
+    "Misc": {
+        "archive_dir": "archive.3",
+        "daidir_abs": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/dadda_16x16_compressed/simv.daidir",
+        "cwd": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/dadda_16x16_compressed",
+        "csrc": "csrc",
+        "daidir": "simv.daidir",
+        "csrc_abs": "/home/local/eda06/haoc/courses/high-speed/Dadda_Multiplier_w_Compressor/dadda_16x16_compressed/csrc",
+        "default_output_dir": "csrc"
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "archive": "archive.3/_45627_archive_1.a",
+        "out": "amcQwB.o",
+        "bytes": 102372
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.45627.json"
+    ]
+}

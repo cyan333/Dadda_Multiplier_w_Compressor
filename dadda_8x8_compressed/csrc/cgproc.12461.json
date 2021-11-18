@@ -1,0 +1,363 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.39541792869567871,
+                0.12803600000000001,
+                0.049013000000000001,
+                259072,
+                270808,
+                1637186233.1116159
+            ],
+            "nMops": 0,
+            "end_perf": [
+                0.40869402885437012,
+                0.131025,
+                0.050784999999999997,
+                262456,
+                270808
+            ],
+            "nQuads": 0
+        },
+        "compressor_4_2": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.48751211166381836,
+                0.187195,
+                0.056800999999999997,
+                269760,
+                279360,
+                1637186233.2037101
+            ],
+            "Compiled Times": 1,
+            "nMops": 644,
+            "end_perf": [
+                0.49335694313049316,
+                0.19303600000000001,
+                0.056800999999999997,
+                269760,
+                279360
+            ],
+            "nQuads": 224
+        },
+        "std": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.40878105163574219,
+                0.13108900000000001,
+                0.050809,
+                262456,
+                270808,
+                1637186233.124979
+            ],
+            "Compiled Times": 1,
+            "nMops": 528,
+            "end_perf": [
+                0.43239712715148926,
+                0.137845,
+                0.055138,
+                263464,
+                275368
+            ],
+            "nQuads": 218
+        },
+        "rca_16b": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.43244194984436035,
+                0.137877,
+                0.055150999999999999,
+                263464,
+                275368,
+                1637186233.1486399
+            ],
+            "Compiled Times": 1,
+            "nMops": 0,
+            "end_perf": [
+                0.43858909606933594,
+                0.13919899999999999,
+                0.055883000000000002,
+                263472,
+                275368
+            ],
+            "nQuads": 0
+        },
+        "compressor_4_2_ld": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.49340105056762695,
+                0.193079,
+                0.056800999999999997,
+                269760,
+                279360,
+                1637186233.209599
+            ],
+            "Compiled Times": 1,
+            "nMops": 790,
+            "end_perf": [
+                0.50073599815368652,
+                0.20041100000000001,
+                0.056800999999999997,
+                269760,
+                279360
+            ],
+            "nQuads": 267
+        },
+        "product_8x8": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.46763896942138672,
+                0.167325,
+                0.056800999999999997,
+                269760,
+                279000,
+                1637186233.1838369
+            ],
+            "Compiled Times": 1,
+            "nMops": 4675,
+            "end_perf": [
+                0.48746800422668457,
+                0.18715000000000001,
+                0.056800999999999997,
+                269760,
+                279360
+            ],
+            "nQuads": 1778
+        },
+        "rca_14b": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.43863010406494141,
+                0.13922899999999999,
+                0.055893999999999999,
+                263472,
+                275368,
+                1637186233.1548281
+            ],
+            "Compiled Times": 1,
+            "nMops": 4885,
+            "end_perf": [
+                0.46231508255004883,
+                0.162078,
+                0.056727,
+                268736,
+                279000
+            ],
+            "nQuads": 1671
+        },
+        "ripple_carry_4_bit": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.46236014366149902,
+                0.16211100000000001,
+                0.056738999999999998,
+                268736,
+                279000,
+                1637186233.1785581
+            ],
+            "Compiled Times": 1,
+            "nMops": 0,
+            "end_perf": [
+                0.4635770320892334,
+                0.163273,
+                0.05679,
+                268736,
+                279000
+            ],
+            "nQuads": 0
+        },
+        "full_adder": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.46361804008483887,
+                0.163303,
+                0.056800999999999997,
+                268736,
+                279000,
+                1637186233.179816
+            ],
+            "Compiled Times": 1,
+            "nMops": 325,
+            "end_perf": [
+                0.46759605407714844,
+                0.16728100000000001,
+                0.056800999999999997,
+                269760,
+                279000
+            ],
+            "nQuads": 113
+        },
+        "dadda_8x8_compressed_tb": {
+            "Compiled": "Yes",
+            "start_perf": [
+                0.50078105926513672,
+                0.200456,
+                0.056800999999999997,
+                269760,
+                279360,
+                1637186233.216979
+            ],
+            "Compiled Times": 1,
+            "nMops": 1403,
+            "end_perf": [
+                0.51125502586364746,
+                0.21014099999999999,
+                0.057585999999999998,
+                269760,
+                279360
+            ],
+            "nQuads": 478
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 0,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7916,
+            "mode": 4
+        },
+        "reYIK_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "std",
+            "checksum": 0,
+            "out": "reYIK_d.o",
+            "bytes": 41434,
+            "mode": 4
+        },
+        "S1Wtd_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "ripple_carry_4_bit",
+            "checksum": 0,
+            "out": "S1Wtd_d.o",
+            "bytes": 6969,
+            "mode": 4
+        },
+        "UY6pt_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "rca_16b",
+            "checksum": 0,
+            "out": "UY6pt_d.o",
+            "bytes": 6894,
+            "mode": 4
+        },
+        "aKNmW_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "rca_14b",
+            "checksum": 0,
+            "out": "aKNmW_d.o",
+            "bytes": 72615,
+            "mode": 4
+        },
+        "NRztg_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "compressor_4_2_ld",
+            "checksum": 0,
+            "out": "NRztg_d.o",
+            "bytes": 18718,
+            "mode": 4
+        },
+        "BEdzp_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "full_adder",
+            "checksum": 0,
+            "out": "BEdzp_d.o",
+            "bytes": 11415,
+            "mode": 4
+        },
+        "ntfQz_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "compressor_4_2",
+            "checksum": 0,
+            "out": "ntfQz_d.o",
+            "bytes": 16477,
+            "mode": 4
+        },
+        "S2T0m_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "product_8x8",
+            "checksum": 0,
+            "out": "S2T0m_d.o",
+            "bytes": 59114,
+            "mode": 4
+        },
+        "Gidut_d": {
+            "archive": "archive.0/_12461_archive_1.a",
+            "mod": "dadda_8x8_compressed_tb",
+            "checksum": 0,
+            "out": "Gidut_d.o",
+            "bytes": 38852,
+            "mode": 4
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_12461_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    41434
+                ],
+                [
+                    "UY6pt_d.o",
+                    6894
+                ],
+                [
+                    "aKNmW_d.o",
+                    72615
+                ],
+                [
+                    "S1Wtd_d.o",
+                    6969
+                ],
+                [
+                    "BEdzp_d.o",
+                    11415
+                ],
+                [
+                    "S2T0m_d.o",
+                    59114
+                ],
+                [
+                    "ntfQz_d.o",
+                    16477
+                ],
+                [
+                    "NRztg_d.o",
+                    18718
+                ],
+                [
+                    "Gidut_d.o",
+                    38852
+                ],
+                [
+                    "amcQwB.o",
+                    103019
+                ]
+            ],
+            "size": 375507
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.215559,
+            "ru_stime_sec": 0.059253,
+            "ru_maxrss_kb": 77728,
+            "ru_nvcsw": 530,
+            "ru_minflt": 26399,
+            "ru_nivcsw": 10,
+            "ru_majflt": 0
+        },
+        "peak_mem_kb": 279360,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0040489999999999996,
+            "ru_stime_sec": 0.019705,
+            "ru_maxrss_kb": 20588,
+            "ru_nvcsw": 39,
+            "ru_minflt": 4451,
+            "ru_nivcsw": 16,
+            "ru_majflt": 0
+        }
+    }
+}
