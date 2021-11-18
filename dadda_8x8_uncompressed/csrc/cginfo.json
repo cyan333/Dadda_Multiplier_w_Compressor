@@ -1,70 +1,70 @@
 {
+    "LVLData": [
+        "SIM"
+    ],
     "MlibObjs": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 100977,
+        "archive": "archive.11/_20614_archive_1.a"
+    },
     "PrevCompiledModules": {
-        "std": {
-            "reYIK_d": {
-                "bytes": 41434,
-                "checksum": 0,
-                "mod": "std",
+        "full_adder": {
+            "BEdzp_d": {
+                "bytes": 9550,
+                "mod": "full_adder",
+                "archive": "archive.11/_prev_archive_1.a",
                 "mode": 4,
-                "archive": "archive.10/_prev_archive_1.a",
-                "out": "reYIK_d.o"
+                "checksum": 0,
+                "out": "BEdzp_d.o"
             }
         },
         "full_adder2": {
             "pmI1A_d": {
                 "bytes": 11158,
-                "checksum": 0,
                 "mod": "full_adder2",
+                "archive": "archive.11/_prev_archive_1.a",
                 "mode": 4,
-                "archive": "archive.10/_prev_archive_1.a",
+                "checksum": 0,
                 "out": "pmI1A_d.o"
             }
         },
-        "full_adder": {
-            "BEdzp_d": {
-                "bytes": 9550,
-                "checksum": 0,
-                "mod": "full_adder",
+        "std": {
+            "reYIK_d": {
+                "bytes": 41434,
+                "mod": "std",
+                "archive": "archive.11/_prev_archive_1.a",
                 "mode": 4,
-                "archive": "archive.10/_prev_archive_1.a",
-                "out": "BEdzp_d.o"
-            }
-        },
-        "dadda_8x8_uncompressed_tb": {
-            "atSgW_d": {
-                "bytes": 108377,
                 "checksum": 0,
-                "mod": "dadda_8x8_uncompressed_tb",
-                "out": "atSgW_d.o",
-                "mode": 4,
-                "archive": "archive.10/_17425_archive_1.a"
+                "out": "reYIK_d.o"
             }
         },
         "...MASTER...": {
             "amcQw_d": {
                 "bytes": 7758,
-                "checksum": 0,
                 "mod": "...MASTER...",
                 "mode": 4,
+                "checksum": 0,
                 "out": "objs/amcQw_d.o"
+            }
+        },
+        "dadda_8x8_uncompressed_tb": {
+            "atSgW_d": {
+                "bytes": 108377,
+                "mod": "dadda_8x8_uncompressed_tb",
+                "out": "atSgW_d.o",
+                "archive": "archive.11/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
             }
         }
     },
-    "PEModules": [],
-    "CompileStrategy": "fullobj",
     "NameTable": {
-        "std": [
-            "std",
-            "reYIK",
+        "full_adder2": [
+            "full_adder2",
+            "pmI1A",
             "module",
-            2
-        ],
-        "dadda_8x8_uncompressed_tb": [
-            "dadda_8x8_uncompressed_tb",
-            "atSgW",
-            "module",
-            6
+            5
         ],
         "full_adder": [
             "full_adder",
@@ -72,95 +72,94 @@
             "module",
             1
         ],
-        "full_adder2": [
-            "full_adder2",
-            "pmI1A",
+        "std": [
+            "std",
+            "reYIK",
             "module",
-            5
+            2
         ],
         "...MASTER...": [
             "SIM",
             "amcQw",
             "module",
             3
+        ],
+        "dadda_8x8_uncompressed_tb": [
+            "dadda_8x8_uncompressed_tb",
+            "atSgW",
+            "module",
+            6
         ]
     },
+    "CompileStrategy": "fullobj",
     "stat": {
-        "ru_self_end": {
-            "ru_nivcsw": 3,
-            "ru_utime_sec": 0.144346,
-            "ru_stime_sec": 0.074092000000000005,
-            "ru_majflt": 0,
-            "ru_maxrss_kb": 75780,
-            "ru_minflt": 26456,
-            "ru_nvcsw": 821
-        },
+        "outputSizePerQuad": 32.199298469387756,
         "ru_self_cgstart": {
-            "ru_nivcsw": 3,
-            "ru_utime_sec": 0.089482999999999993,
-            "ru_stime_sec": 0.063044000000000003,
+            "ru_nvcsw": 573,
+            "ru_minflt": 23313,
+            "ru_utime_sec": 0.100117,
             "ru_majflt": 0,
-            "ru_maxrss_kb": 68664,
-            "ru_minflt": 23171,
-            "ru_nvcsw": 642
+            "ru_stime_sec": 0.046370000000000001,
+            "ru_maxrss_kb": 68660,
+            "ru_nivcsw": 6
         },
         "ru_childs_cgstart": {
-            "ru_nivcsw": 16,
-            "ru_utime_sec": 0.0053540000000000003,
-            "ru_stime_sec": 0.016990000000000002,
-            "ru_majflt": 0,
-            "ru_maxrss_kb": 20476,
+            "ru_nvcsw": 33,
             "ru_minflt": 4388,
-            "ru_nvcsw": 33
+            "ru_utime_sec": 0.0067559999999999999,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.015167,
+            "ru_maxrss_kb": 20476,
+            "ru_nivcsw": 16
+        },
+        "nMops": 9594,
+        "nQuads": 3136,
+        "Frontend(%)": 78.731234714500289,
+        "totalObjSize": 100977,
+        "CodeGen(%)": 21.268765285499715,
+        "mopSpeed": 354728.98025586037,
+        "ru_self_end": {
+            "ru_nvcsw": 716,
+            "ru_minflt": 26016,
+            "ru_utime_sec": 0.127163,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.056162999999999998,
+            "ru_maxrss_kb": 74536,
+            "ru_nivcsw": 6
         },
         "ru_childs_end": {
-            "ru_nivcsw": 18,
-            "ru_utime_sec": 0.0062059999999999997,
-            "ru_stime_sec": 0.019545,
-            "ru_majflt": 0,
-            "ru_maxrss_kb": 22496,
+            "ru_nvcsw": 44,
             "ru_minflt": 4999,
-            "ru_nvcsw": 44
+            "ru_utime_sec": 0.0067559999999999999,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.019129,
+            "ru_maxrss_kb": 22492,
+            "ru_nivcsw": 18
         },
-        "mop/quad": 2.9682369735902925,
-        "nMops": 16634,
-        "nQuads": 5604,
-        "totalObjSize": 209434,
-        "mopSpeed": 303191.58631500276,
-        "Frontend(%)": 61.992019176146201,
-        "quadSpeed": 102145.3438565153,
-        "outputSizePerQuad": 37.372234118486794,
-        "CodeGen(%)": 38.007980823853799,
-        "peak_mem_kb": 279684
-    },
-    "SIMBData": {
-        "out": "amcQwB.o",
-        "bytes": 101057,
-        "archive": "archive.10/_17425_archive_1.a"
+        "quadSpeed": 115950.6026769208,
+        "mop/quad": 3.0593112244897958,
+        "peak_mem_kb": 270832
     },
     "CurCompileUdps": {},
     "CurCompileModules": [
         "...MASTER...",
         "std",
         "dadda_8x8_uncompressed_tb",
-        "dadda_8x8_uncompressed_tb",
         "full_adder",
         "full_adder2"
     ],
     "Misc": {
-        "csrc_abs": "/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/csrc",
+        "daidir": "simv.daidir",
         "cwd": "/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed",
         "csrc": "csrc",
-        "default_output_dir": "csrc",
-        "daidir": "simv.daidir",
+        "archive_dir": "archive.11",
+        "csrc_abs": "/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/csrc",
         "daidir_abs": "/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/simv.daidir",
-        "archive_dir": "archive.10"
+        "default_output_dir": "csrc"
     },
-    "LVLData": [
-        "SIM"
-    ],
+    "PEModules": [],
     "CompileProcesses": [
-        "cgproc.17425.json"
+        "cgproc.20614.json"
     ],
     "CompileStatus": "Successful"
 }

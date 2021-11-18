@@ -5,11 +5,23 @@
         "module",
         2
     ],
-    "dadda_8x8_uncompressed_tb": [
-        "dadda_8x8_uncompressed_tb",
-        "atSgW",
+    "ripple_carry_4_bit": [
+        "ripple_carry_4_bit",
+        "S1Wtd",
         "module",
-        6
+        8
+    ],
+    "half_adder": [
+        "half_adder",
+        "ArxBC",
+        "module",
+        4
+    ],
+    "dadda_16x16_uncompressed_tb": [
+        "dadda_16x16_uncompressed_tb",
+        "EEKNR",
+        "module",
+        7
     ],
     "full_adder": [
         "full_adder",

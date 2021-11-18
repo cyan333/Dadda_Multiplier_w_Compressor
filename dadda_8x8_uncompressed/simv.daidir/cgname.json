@@ -1,15 +1,9 @@
 {
-    "std": [
-        "std",
-        "reYIK",
+    "full_adder2": [
+        "full_adder2",
+        "pmI1A",
         "module",
-        2
-    ],
-    "dadda_8x8_uncompressed_tb": [
-        "dadda_8x8_uncompressed_tb",
-        "atSgW",
-        "module",
-        6
+        5
     ],
     "full_adder": [
         "full_adder",
@@ -17,16 +11,22 @@
         "module",
         1
     ],
-    "full_adder2": [
-        "full_adder2",
-        "pmI1A",
+    "std": [
+        "std",
+        "reYIK",
         "module",
-        5
+        2
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
         3
+    ],
+    "dadda_8x8_uncompressed_tb": [
+        "dadda_8x8_uncompressed_tb",
+        "atSgW",
+        "module",
+        6
     ]
 }

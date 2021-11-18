@@ -20,7 +20,7 @@ Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
 License RTL_Compiler_Physical checkout failed
 Checking out license 'RTL_Compiler_L'... (0 seconds elapsed)
 License RTL_Compiler_L checkout failed
-Checking out license 'Virtuoso_Digital_Implem'... (1 seconds elapsed)
+Checking out license 'Virtuoso_Digital_Implem'... (0 seconds elapsed)
 Reading GUI preferences file '/home/polaris/sxie/.cadence/rc.gui'.
 
                                             Cadence Encounter(R) RTL Compiler
@@ -113,7 +113,7 @@ Send us feedback at rc_feedback@cadence.com.
 =========================================================================================================================
 
 rc:/> source synthesis.tcl 
-Sourcing './synthesis.tcl' (Tue Nov 16 20:23:44 CST 2021)...
+Sourcing './synthesis.tcl' (Thu Nov 18 14:26:50 CST 2021)...
 Warning : Improperly defined 'leakage_power' group. [LBR-150]
         : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7777 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
         : To take the 'leakage_power' group into account during power estimation, fix the library first and restart. For more information, refer to the Liberty Reference Manual.
@@ -147,16 +147,13 @@ Warning : The variant range of wire parameters is too large. [PHYS-12]
 Warning : The variant range of wire parameters is too large. [PHYS-12]
         : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'M9' is too large.
   Setting attribute of root '/': 'cap_table_file' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/techfiles/captable/cln65g+_1p08m+alrdl_typical_top1.captable
-Sourcing './load_rtl.tcl' (Tue Nov 16 20:23:48 CST 2021)...
-	input [7:0] a,
-	    |
-Error   : Verilog-2001 feature. [VLOGPT-3] [read_hdl]
-        : Ansi-style port declaration in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 4, column 6.
-        : The design must be read in with 'read_hdl -v2001'.
-Failed on read_hdl {  /home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v
-}
+Sourcing './load_rtl.tcl' (Thu Nov 18 14:26:53 CST 2021)...
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'processsing_block_8x8'.
+        : Ensure that the design exists or the correct file was loaded.
+Failed on elaborate processsing_block_8x8
 rc:/> source synthesis.tcl 
-Sourcing './synthesis.tcl' (Tue Nov 16 20:27:03 CST 2021)...
+Sourcing './synthesis.tcl' (Thu Nov 18 14:27:11 CST 2021)...
 Freeing libraries in memory (/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib)
 
 Warning : Improperly defined 'leakage_power' group. [LBR-150]
@@ -189,63 +186,48 @@ Warning : The variant range of wire parameters is too large. [PHYS-12]
 Warning : The variant range of wire parameters is too large. [PHYS-12]
         : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'M9' is too large.
   Setting attribute of root '/': 'cap_table_file' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/techfiles/captable/cln65g+_1p08m+alrdl_typical_top1.captable
-Sourcing './load_rtl.tcl' (Tue Nov 16 20:27:09 CST 2021)...
-	input [7:0] b,
-	    |
-Error   : Parsing error. [VLOGPT-1] [read_hdl]
-        : Expecting token ';', found 'input' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 5, column 6.
-        : Invalid Verilog syntax is parsed, or unsupported Verilog syntax is encountered.
-Failed on read_hdl {  /home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v
-}
-rc:/> source synthesis.tcl 
-Sourcing './synthesis.tcl' (Tue Nov 16 20:27:27 CST 2021)...
-Freeing libraries in memory (/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib)
-
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7777 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7782 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7787 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLHQD20'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLHQD24'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLNQD20'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLNQD24'.
-  Library has 441 usable logic and 280 usable sequential lib-cells.
-  Setting attribute of root '/': 'library' = /usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib
-
-  There are total 9 routing layers [ V(4) / H(5) ]
-
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'AP' is too large.
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.2, 6.5) of 'PITCH' for layers 'M3' and 'AP' is too large.
-  Setting attribute of root '/': 'lef_library' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_8lmT1.lef
-
-  There are total 9 routing layers [ V(4) / H(5) ]
-
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'M9' is too large.
-  Setting attribute of root '/': 'cap_table_file' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/techfiles/captable/cln65g+_1p08m+alrdl_typical_top1.captable
-Sourcing './load_rtl.tcl' (Tue Nov 16 20:27:33 CST 2021)...
-  Elaborating top-level block 'processsing_block_8x8' from file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v'.
+Sourcing './load_rtl.tcl' (Thu Nov 18 14:27:16 CST 2021)...
+module dadda_8x8_uncompressed(a,b,final_result);
+                            |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'dadda_8x8_uncompressed' with Verilog module in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 3, column 29.
+        : A Verilog description is replaced when a new description of the same name and same library is read again.
+    Verilog descriptions are:
+       module
+       macromodule
+    SystemVerilog adds the following descriptions:
+       interface
+       program
+       package.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'dadda_8x8_uncompressed' in library 'default' with newly read Verilog module 'dadda_8x8_uncompressed' in the same library in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 3.
+        : A newly read VHDL entity replaces any previously read Verilog module or VHDL entity in the same library if its name matches (case-insensitively) the existing module or entity.
+    For instance:
+        VHDL 'foo'                  replaces  VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        VHDL 'foo' (in any library) replaces  Verilog {'FOO' or 'foo' or 'Foo' or ...} in the same library
+ 
+A newly read Verilog module replaces any previously read Verilog module if its name matches (case-sensitively) that module.  Further, it replaces any previously read VHDL entity in the same library if its name matches (case -insensitively) that entity.
+    For instance:
+        Verilog 'foo' replaces    VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        Verilog 'foo' replaces    Verilog 'foo' only
+    In addition:
+        Verilog 'foo' does not replace Verilog 'FOO' and the two remain as distinct modules.
+  Elaborating top-level block 'dadda_8x8_uncompressed' from file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v'.
 Warning : Creating blackbox. [CDFG-428]
-        : A blackbox was created for instance 'product_8x8' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 12.
+        : A blackbox was created for instance 'product_8x8' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 22.
         : Blackboxes are represented as unresolved references in the design. Use 'set_attribute hdl_error_on_blackbox true /' to cause an error when a blackbox is found.
 Warning : Creating blackbox. [CDFG-428]
-        : A blackbox was created for instance 'half_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 15.
+        : A blackbox was created for instance 'half_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 25.
 Warning : Creating blackbox. [CDFG-428]
-        : A blackbox was created for instance 'full_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 19.
-Warning : Undriven module output port. [ELABUTL-123]
-        : Undriven bits of output port 'before_adder[0]' in module 'processsing_block_8x8' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 6, column 34.
-        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
-Warning : Undriven module output port. [ELABUTL-123]
-        : Undriven bits of output port 'before_adder[1]' in module 'processsing_block_8x8' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 6, column 34.
-  Done elaborating 'processsing_block_8x8'.
+        : A blackbox was created for instance 'full_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 29.
+Warning : Creating blackbox. [CDFG-428]
+        : A blackbox was created for instance 'rca_14b' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 88.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'P721' of instance 'rca_uut' of module 'rca_14b' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 88, column 17.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven input port during elaboration.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'P722' of instance 'rca_uut' of module 'rca_14b' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 88, column 17.
+  Done elaborating 'dadda_8x8_uncompressed'.
 Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
         : Cannot resolve reference to 'product_8x8'.
         : To resolve the reference, either load a technology library containing the cell by appending to the 'library' attribute, or read in the hdl file containing the module before performing elaboration. As the design is incomplete, synthesis results may not correspond to the entire design.
@@ -253,13 +235,52 @@ Warning : Black-boxes are represented as unresolved references in the design. [T
         : Cannot resolve reference to 'half_adder'.
 Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
         : Cannot resolve reference to 'full_adder'.
-Warning - '/designs/processsing_block_8x8/instances_hier/P_var' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/ha0' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/ha1' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/ha2' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/fa0' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/fa1' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/fa2' is an unresolved reference. It cannot be ungrouped.
+Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
+        : Cannot resolve reference to 'rca_14b'.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/P_var' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/ha0' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/ha1' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/ha2' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa0' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa1' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa2' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/ha3' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/ha4' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa3' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa4' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa5' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa6' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa7' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa8' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa9' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa10' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa11' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa12' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa13' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa14' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/ha5' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa15' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa16' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa17' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa18' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa19' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa20' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa21' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa22' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa23' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/ha6' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa24' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa25' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa26' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa27' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa28' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa29' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa30' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa31' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa32' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa33' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/fa34' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_8x8_uncompressed/instances_hier/rca_uut' is an unresolved reference. It cannot be ungrouped.
 Current PLE settings:
 
 Aspect ratio        : 1.00
@@ -313,9 +334,9 @@ M9          H          3.000000 *
 
 * = This value is too large; 2.0 will be used instead.
 
-Mapping processsing_block_8x8 to gates.
+Mapping dadda_8x8_uncompressed to gates.
 Info    : Deleting instances not driving any primary outputs. [GLO-32]
-        : Deleting 7 hierarchical instances.
+        : Deleting 1 hierarchical instance.
         : To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
  
 Global mapping target info
@@ -329,7 +350,7 @@ Global mapping status
                  Total    Neg   
 Operation         Area   Slack  Worst Path
 -------------------------------------------------------------------------------
- global_map          0       0  N/A
+ global_map        431       0  N/A
  
 Global incremental target info
 ==============================
@@ -342,12 +363,12 @@ Global incremental optimization status
                  Total    Neg   
 Operation         Area   Slack  Worst Path
 -------------------------------------------------------------------------------
- global_inc          0       0  N/A
+ global_inc        431       0  N/A
                          Worst  - - DRC Totals - - 
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_iopt           0       0         0        0
+ init_iopt         431       0         0        0
  
 Incremental optimization status
 ===============================
@@ -355,9 +376,9 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay        431       0         0        0
+ init_drc          431       0         0        0
+ init_area         431       0         0        0
  
 Incremental optimization status
 ===============================
@@ -365,11 +386,11 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay        431       0         0        0
+ init_drc          431       0         0        0
+ init_area         431       0         0        0
 
-  Done mapping processsing_block_8x8
+  Done mapping dadda_8x8_uncompressed
   Synthesis succeeded.
 Current PLE settings:
 
@@ -424,12 +445,12 @@ M9          H          3.000000 *
 
 * = This value is too large; 2.0 will be used instead.
 
-  Incrementally optimizing processsing_block_8x8
+  Incrementally optimizing dadda_8x8_uncompressed
                          Worst  - - DRC Totals - - 
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_iopt           0       0         0        0
+ init_iopt         431       0         0        0
  
 Incremental optimization status
 ===============================
@@ -437,9 +458,9 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay        431       0         0        0
+ init_drc          431       0         0        0
+ init_area         431       0         0        0
  
 Incremental optimization status
 ===============================
@@ -447,11 +468,11 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay        431       0         0        0
+ init_drc          431       0         0        0
+ init_area         431       0         0        0
 
-  Done mapping processsing_block_8x8
+  Done mapping dadda_8x8_uncompressed
   Synthesis succeeded.
 rc:/> exit
 rc:/> 

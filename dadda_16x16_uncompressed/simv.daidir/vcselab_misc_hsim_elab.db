@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/simv.daidir
+pDaiDir                            	/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0

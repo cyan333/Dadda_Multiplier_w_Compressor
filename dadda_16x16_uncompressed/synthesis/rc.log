@@ -20,7 +20,7 @@ Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
 License RTL_Compiler_Physical checkout failed
 Checking out license 'RTL_Compiler_L'... (0 seconds elapsed)
 License RTL_Compiler_L checkout failed
-Checking out license 'Virtuoso_Digital_Implem'... (1 seconds elapsed)
+Checking out license 'Virtuoso_Digital_Implem'... (0 seconds elapsed)
 Reading GUI preferences file '/home/polaris/sxie/.cadence/rc.gui'.
 
                                             Cadence Encounter(R) RTL Compiler
@@ -113,7 +113,7 @@ Send us feedback at rc_feedback@cadence.com.
 =========================================================================================================================
 
 rc:/> source synthesis.tcl 
-Sourcing './synthesis.tcl' (Tue Nov 16 20:23:44 CST 2021)...
+Sourcing './synthesis.tcl' (Thu Nov 18 14:25:48 CST 2021)...
 Warning : Improperly defined 'leakage_power' group. [LBR-150]
         : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7777 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
         : To take the 'leakage_power' group into account during power estimation, fix the library first and restart. For more information, refer to the Liberty Reference Manual.
@@ -147,119 +147,244 @@ Warning : The variant range of wire parameters is too large. [PHYS-12]
 Warning : The variant range of wire parameters is too large. [PHYS-12]
         : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'M9' is too large.
   Setting attribute of root '/': 'cap_table_file' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/techfiles/captable/cln65g+_1p08m+alrdl_typical_top1.captable
-Sourcing './load_rtl.tcl' (Tue Nov 16 20:23:48 CST 2021)...
-	input [7:0] a,
-	    |
-Error   : Verilog-2001 feature. [VLOGPT-3] [read_hdl]
-        : Ansi-style port declaration in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 4, column 6.
-        : The design must be read in with 'read_hdl -v2001'.
-Failed on read_hdl {  /home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v
-}
-rc:/> source synthesis.tcl 
-Sourcing './synthesis.tcl' (Tue Nov 16 20:27:03 CST 2021)...
-Freeing libraries in memory (/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib)
-
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7777 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7782 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7787 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLHQD20'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLHQD24'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLNQD20'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLNQD24'.
-  Library has 441 usable logic and 280 usable sequential lib-cells.
-  Setting attribute of root '/': 'library' = /usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib
-
-  There are total 9 routing layers [ V(4) / H(5) ]
-
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'AP' is too large.
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.2, 6.5) of 'PITCH' for layers 'M3' and 'AP' is too large.
-  Setting attribute of root '/': 'lef_library' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_8lmT1.lef
-
-  There are total 9 routing layers [ V(4) / H(5) ]
-
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'M9' is too large.
-  Setting attribute of root '/': 'cap_table_file' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/techfiles/captable/cln65g+_1p08m+alrdl_typical_top1.captable
-Sourcing './load_rtl.tcl' (Tue Nov 16 20:27:09 CST 2021)...
-	input [7:0] b,
-	    |
-Error   : Parsing error. [VLOGPT-1] [read_hdl]
-        : Expecting token ';', found 'input' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 5, column 6.
-        : Invalid Verilog syntax is parsed, or unsupported Verilog syntax is encountered.
-Failed on read_hdl {  /home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v
-}
-rc:/> source synthesis.tcl 
-Sourcing './synthesis.tcl' (Tue Nov 16 20:27:27 CST 2021)...
-Freeing libraries in memory (/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib)
-
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7777 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7782 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Improperly defined 'leakage_power' group. [LBR-150]
-        : The 'related_pg_pin' attribute value 'VSS' in 'leakage_power' group on line 7787 for cell 'ANTENNA' in library '/usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib' does not have corresponding 'pg_pin' group. Either 'pg_pin' group is not defined OR its defined later & referenced earlier. Ignore the warning if 'pg_pin' group is defined later in liberty file.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLHQD20'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLHQD24'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLNQD20'.
-Warning : Unusable clock gating integrated cell. [LBR-101]
-        : Clock gating integrated cell name: 'CKLNQD24'.
-  Library has 441 usable logic and 280 usable sequential lib-cells.
-  Setting attribute of root '/': 'library' = /usr/local/packages/tsmc_65m/digital/Front_End/timing_power_noise/NLDM/tcbn65gplus_200a/tcbn65gplustc.lib
-
-  There are total 9 routing layers [ V(4) / H(5) ]
-
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'AP' is too large.
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.2, 6.5) of 'PITCH' for layers 'M3' and 'AP' is too large.
-  Setting attribute of root '/': 'lef_library' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/lef/tcbn65gplus_8lmT1.lef
-
-  There are total 9 routing layers [ V(4) / H(5) ]
-
-Warning : The variant range of wire parameters is too large. [PHYS-12]
-        : The variant range (0.09, 3) of 'WIDTH' for layers 'M1' and 'M9' is too large.
-  Setting attribute of root '/': 'cap_table_file' = /usr/local/packages/tsmc_65m/digital/Back_End/lef/tcbn65gplus_200a/techfiles/captable/cln65g+_1p08m+alrdl_typical_top1.captable
-Sourcing './load_rtl.tcl' (Tue Nov 16 20:27:33 CST 2021)...
-  Elaborating top-level block 'processsing_block_8x8' from file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v'.
+Sourcing './load_rtl.tcl' (Thu Nov 18 14:25:52 CST 2021)...
+  Elaborating top-level block 'dadda_16x16_uncompressed3' from file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/dadda_16x16_uncompressed3.v'.
 Warning : Creating blackbox. [CDFG-428]
-        : A blackbox was created for instance 'product_8x8' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 12.
+        : A blackbox was created for instance 'product_16x16' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/dadda_16x16_uncompressed3.v' on line 22.
         : Blackboxes are represented as unresolved references in the design. Use 'set_attribute hdl_error_on_blackbox true /' to cause an error when a blackbox is found.
 Warning : Creating blackbox. [CDFG-428]
-        : A blackbox was created for instance 'half_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 15.
+        : A blackbox was created for instance 'half_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/dadda_16x16_uncompressed3.v' on line 25.
 Warning : Creating blackbox. [CDFG-428]
-        : A blackbox was created for instance 'full_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 19.
-Warning : Undriven module output port. [ELABUTL-123]
-        : Undriven bits of output port 'before_adder[0]' in module 'processsing_block_8x8' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 6, column 34.
-        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
-Warning : Undriven module output port. [ELABUTL-123]
-        : Undriven bits of output port 'before_adder[1]' in module 'processsing_block_8x8' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_8x8_uncompressed/dadda_8x8_uncompressed.v' on line 6, column 34.
-  Done elaborating 'processsing_block_8x8'.
+        : A blackbox was created for instance 'full_adder' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/dadda_16x16_uncompressed3.v' on line 27.
+Warning : Creating blackbox. [CDFG-428]
+        : A blackbox was created for instance 'rca_30b' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/dadda_16x16_uncompressed3.v' on line 377.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'P4085' of instance 'rca_uut' of module 'rca_30b' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/dadda_16x16_uncompressed3.v' on line 377, column 17.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven input port during elaboration.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'P4086' of instance 'rca_uut' of module 'rca_30b' in file '/home/polaris/sxie/tsmc65/verilog/Dadda_Multiplier_w_Compressor/dadda_16x16_uncompressed/dadda_16x16_uncompressed3.v' on line 377, column 17.
+  Done elaborating 'dadda_16x16_uncompressed3'.
 Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
-        : Cannot resolve reference to 'product_8x8'.
+        : Cannot resolve reference to 'product_16x16'.
         : To resolve the reference, either load a technology library containing the cell by appending to the 'library' attribute, or read in the hdl file containing the module before performing elaboration. As the design is incomplete, synthesis results may not correspond to the entire design.
 Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
         : Cannot resolve reference to 'half_adder'.
 Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
         : Cannot resolve reference to 'full_adder'.
-Warning - '/designs/processsing_block_8x8/instances_hier/P_var' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/ha0' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/ha1' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/ha2' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/fa0' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/fa1' is an unresolved reference. It cannot be ungrouped.
-Warning - '/designs/processsing_block_8x8/instances_hier/fa2' is an unresolved reference. It cannot be ungrouped.
+Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
+        : Cannot resolve reference to 'rca_30b'.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/P_var' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha0' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa1' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha2' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa3' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa4' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha5' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa6' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa7' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha8' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa9' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa10' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa11' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha12' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa13' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha14' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa15' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa16' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha17' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa18' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa19' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa20' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha21' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa22' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa23' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa24' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa25' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa26' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa27' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa28' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa29' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa30' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa31' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa32' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa33' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa34' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa35' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa36' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa37' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa38' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa39' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa40' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa41' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa42' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa43' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa44' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa45' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa46' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa47' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa48' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa49' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa50' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa51' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa52' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa53' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa54' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa55' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha56' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa57' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha58' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa59' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa60' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha61' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa62' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa63' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa64' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa65' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa66' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa67' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa68' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa69' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa70' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa71' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa72' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa73' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa74' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa75' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa76' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa77' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa78' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa79' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa80' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa81' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa82' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa83' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa84' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa85' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa86' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa87' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa88' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa89' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa90' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa91' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa92' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa93' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa94' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa95' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa96' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa97' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa98' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa99' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa100' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa101' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa102' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa103' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa104' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa105' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa106' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa107' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa108' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa109' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha110' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa111' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha112' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa113' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa114' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa115' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa116' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa117' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa118' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa119' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa120' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa121' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa122' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa123' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa124' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa125' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa126' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa127' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa128' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa129' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa130' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa131' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa132' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa133' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa134' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa135' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa136' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa137' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa138' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa139' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa140' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa141' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa142' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa143' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa144' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa145' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa146' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa147' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa148' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa149' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa150' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa151' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa152' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa153' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa154' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa155' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha156' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa157' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa158' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa159' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa160' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa161' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa162' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa163' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa164' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa165' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa166' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa167' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa168' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa169' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa170' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa171' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa172' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa173' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa174' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa175' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa176' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa177' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa178' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa179' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa180' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa181' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/ha182' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa183' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa184' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa185' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa186' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa187' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa188' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa189' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa190' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa191' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa192' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa193' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa194' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa195' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa196' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa197' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa198' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa199' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa200' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa201' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa202' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa203' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa204' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa205' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa206' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa207' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa208' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/fa209' is an unresolved reference. It cannot be ungrouped.
+Warning - '/designs/dadda_16x16_uncompressed3/instances_hier/rca_uut' is an unresolved reference. It cannot be ungrouped.
 Current PLE settings:
 
 Aspect ratio        : 1.00
@@ -313,9 +438,9 @@ M9          H          3.000000 *
 
 * = This value is too large; 2.0 will be used instead.
 
-Mapping processsing_block_8x8 to gates.
+Mapping dadda_16x16_uncompressed3 to gates.
 Info    : Deleting instances not driving any primary outputs. [GLO-32]
-        : Deleting 7 hierarchical instances.
+        : Deleting 1 hierarchical instance.
         : To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
  
 Global mapping target info
@@ -329,7 +454,7 @@ Global mapping status
                  Total    Neg   
 Operation         Area   Slack  Worst Path
 -------------------------------------------------------------------------------
- global_map          0       0  N/A
+ global_map       2051       0  N/A
  
 Global incremental target info
 ==============================
@@ -342,12 +467,12 @@ Global incremental optimization status
                  Total    Neg   
 Operation         Area   Slack  Worst Path
 -------------------------------------------------------------------------------
- global_inc          0       0  N/A
+ global_inc       2051       0  N/A
                          Worst  - - DRC Totals - - 
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_iopt           0       0         0        0
+ init_iopt        2051       0         0        0
  
 Incremental optimization status
 ===============================
@@ -355,9 +480,9 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay       2051       0         0        0
+ init_drc         2051       0         0        0
+ init_area        2051       0         0        0
  
 Incremental optimization status
 ===============================
@@ -365,11 +490,11 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay       2051       0         0        0
+ init_drc         2051       0         0        0
+ init_area        2051       0         0        0
 
-  Done mapping processsing_block_8x8
+  Done mapping dadda_16x16_uncompressed3
   Synthesis succeeded.
 Current PLE settings:
 
@@ -424,12 +549,12 @@ M9          H          3.000000 *
 
 * = This value is too large; 2.0 will be used instead.
 
-  Incrementally optimizing processsing_block_8x8
+  Incrementally optimizing dadda_16x16_uncompressed3
                          Worst  - - DRC Totals - - 
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_iopt           0       0         0        0
+ init_iopt        2051       0         0        0
  
 Incremental optimization status
 ===============================
@@ -437,9 +562,9 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay       2051       0         0        0
+ init_drc         2051       0         0        0
+ init_area        2051       0         0        0
  
 Incremental optimization status
 ===============================
@@ -447,11 +572,11 @@ Incremental optimization status
                  Total    Neg       Max       Max 
 Operation         Area   Slack     Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay          0       0         0        0
- init_drc            0       0         0        0
- init_area           0       0         0        0
+ init_delay       2051       0         0        0
+ init_drc         2051       0         0        0
+ init_area        2051       0         0        0
 
-  Done mapping processsing_block_8x8
+  Done mapping dadda_16x16_uncompressed3
   Synthesis succeeded.
 rc:/> exit
 rc:/> 

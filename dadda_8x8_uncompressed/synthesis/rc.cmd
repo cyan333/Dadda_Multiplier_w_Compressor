@@ -5,5 +5,4 @@
 
 source synthesis.tcl 
 source synthesis.tcl 
-source synthesis.tcl 
 exit

@@ -30,7 +30,7 @@ set pincap_other 10
 
 set rtl_list_file [glob load_rtl.tcl] 
 #####change here#####
-set designName "processsing_block_8x8" 
+set designName "dadda_16x16_uncompressed3" 
 set outDir RESULTS
 set reportDir REPORTS
 
